@@ -69,8 +69,8 @@ class Network(object):
             
             test_accuracy = self.evaluate(test_data)
             test_accuracies.append(test_accuracy)
-            print("Epoch {0}: {1} / {2}".format(
-                j, test_accuracy, n_test))
+            #print("Epoch {0}: {1} / {2}".format(
+            #    j, test_accuracy, n_test))
         return {'train_acc':train_accuracies, 'test_acc': test_accuracies}
 
     def update_mini_batch(self, mini_batch, eta):
